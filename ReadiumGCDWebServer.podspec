@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name     = 'ReadiumGCDWebServer'
-  s.version  = '4.0.200'
+  s.version  = '4.0.202'
   s.author   =  { 'Pierre-Olivier Latour' => 'info@pol-online.net' }
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
   s.homepage = 'https://github.com/readium/GCDWebServer'
