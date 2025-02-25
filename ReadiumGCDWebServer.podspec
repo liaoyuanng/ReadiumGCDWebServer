@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   end
 
    s.subspec 'WebDAV' do |cs|
-    cs.dependency 'GCDWebServer/Core'
+    cs.dependency 'ReadiumGCDWebServer/Core'
     cs.source_files = 'GCDWebDAVServer/*.{h,m}'
     cs.requires_arc = true
     cs.ios.library = 'xml2'
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'WebUploader' do |cs|
-    cs.dependency 'GCDWebServer/Core'
+    cs.dependency 'ReadiumGCDWebServer/Core'
     cs.source_files = 'GCDWebUploader/*.{h,m}'
     cs.requires_arc = true
     cs.resource = "GCDWebUploader/GCDWebUploader.bundle"
