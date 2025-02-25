@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/readium/GCDWebServer'
   s.summary  = 'Lightweight GCD based HTTP server for OS X & iOS'
   
-  s.source   = { :git => 'https://github.com/liaoyuanng/GCDWebServer.git', :tag => s.version.to_s }
+  s.source   = { :git => 'git@github.com:liaoyuanng/ReadiumGCDWebServer.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.requires_arc = true
   
