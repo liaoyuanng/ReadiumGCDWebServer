@@ -26,4 +26,19 @@ Pod::Spec.new do |s|
     cs.ios.library = 'z'
     cs.ios.frameworks = 'MobileCoreServices', 'CFNetwork'
   end
+
+   s.subspec 'WebDAV' do |cs|
+    cs.dependency 'GCDWebServer/Core'
+    cs.source_files = 'GCDWebDAVServer/*.{h,m}'
+    cs.requires_arc = true
+    cs.ios.library = 'xml2'
+    cs.compiler_flags = '-I$(SDKROOT)/usr/include/libxml2'
+  end
+  
+  s.subspec 'WebUploader' do |cs|
+    cs.dependency 'GCDWebServer/Core'
+    cs.source_files = 'GCDWebUploader/*.{h,m}'
+    cs.requires_arc = true
+    cs.resource = "GCDWebUploader/GCDWebUploader.bundle"
+  end
 end
