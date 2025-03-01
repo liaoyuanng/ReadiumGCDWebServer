@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_END
 
 - (instancetype)initWithUploadDirectory:(NSString*)path {
   if ((self = [super init])) {
-    NSString* bundlePath = [[NSBundle bundleForClass:[ReadiumGCDWebUploader class]] pathForResource:@"ReadiumGCDWebUploader" ofType:@"bundle"];
+    NSString* bundlePath = [[NSBundle bundleForClass:[ReadiumGCDWebUploader class]] pathForResource:@"GCDWebUploader" ofType:@"bundle"];
     if (bundlePath == nil) {
       return nil;
     }
